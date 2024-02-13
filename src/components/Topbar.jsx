@@ -57,6 +57,7 @@ function Topbar() {
               color: 'inherit',
               letterSpacing: "0.3rem",
               textDecoration: 'none',
+              wordSpacing: '-2px',
               '&:hover': {
                 color: '#4BFFA5 !important'
               }
@@ -75,8 +76,9 @@ function Topbar() {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+              
             >
-              <MenuIcon />
+              <MenuIcon className='text-[2.4rem]' />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -120,7 +122,8 @@ function Topbar() {
               fontWeight: 600,
               color: 'inherit',
               textDecoration: 'none',
-              letterSpacing: "0.3rem"
+              letterSpacing: "0.3rem",
+              wordSpacing: '-2px'
             }}
           >
             SR
@@ -144,25 +147,24 @@ function Topbar() {
                         // Your hover styles for Typography
                         color: '#4BFFA5 !important', // Change this to your desired hover background color
                     }, color: activePage === page ? '#4BFFA5 !important' : 'inherit', my: 2, display: 'block' }}
-                    style={{ fontFamily: 'Iceland', color: '#858792', fontSize: '18px', letterSpacing: "0.1rem", fontWeight: 600}}
+                    style={{ fontFamily: 'Iceland', color: '#858792', fontSize: '18px', fontWeight: 600}}
                 >
                     {page}
                 </Button>
               </Link>
             ))}
           </Box>
-              <div className='button-container'>
-                <div className='center'>
-                  <div className='button'>
-                    <span style={{ fontFamily: 'NanumGothic'}}>Hire me</span>
-                    <svg width="140px" height="60px" viewBox="0 0 180 60" class="border">
-                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                    </svg>
-                  </div>
-                </div>
+          <div className='hidden xs:block'>
+            <div className='center'>
+              <div className='button relative cursor-pointer fill-none stroke-2'>
+                <span className='absolute top-0 left-0 right-0 uppercase text-center leading-[58px] text-[20px] tracking-wide' style={{ fontFamily: 'NanumGothic'}}>Hire me</span>
+                <svg width="140px" height="60px" viewBox="0 0 180 60" className="border1">
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" className="bg-line" />
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" className="hl-line" />
+                </svg>
               </div>
-    
+            </div>
+          </div>
         </Toolbar>
       </Container>
     </AppBar>

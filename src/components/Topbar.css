@@ -1,25 +1,8 @@
 .css-1t6c9ts {
     justify-content: center !important;
 }
-.button {
-    position: relative;
-    cursor: pointer;
-}
-.button span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 58px;
-    font-size: 20px;
-    letter-spacing: 2px;
-}
-.border {
-    fill: none;
-    stroke-width: 1;
-}
+
+
 .bg-line {
     fill: #252734;
     stroke: #4BFFA5;

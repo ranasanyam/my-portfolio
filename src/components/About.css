@@ -1,0 +1,79 @@
+
+.frame {
+    position: absolute;
+	top: -5%;
+	left: 22.5%;
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+    background: transparent;
+	color: #2fcc71;
+	display: flex;
+	align-items: center;
+    z-index: 10;
+	justify-content: center;
+}
+.frame2 {
+    position: absolute;
+	top: 4.5%;
+	left: 30%;
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+    background: transparent;
+	color: #2fcc71;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    z-index: 2;
+}
+.circle-inner {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle-outer {
+    width: 40px;
+    height: 40px;
+	border-radius: 50%;
+	border: 2px solid #2fcc71;
+	animation: mouse-circle-scale 2s ease-in infinite;
+}
+.circle-inner .icon {
+    position: absolute;
+    top: 10px;
+    z-index: 20;
+}
+.circle {
+    border: 2px solid white;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: -28%;
+    left: 30%;
+    opacity: 0.5;
+    z-index: 00;
+    border-radius: 50%;
+
+    fill: #252734;
+    stroke: #4BFFA5;
+    transition: all 0.8s ease-in-out;
+      
+}
+
+  
+  @keyframes blink-caret {
+    from, to {
+      background-color: transparent;
+    }
+    50% {
+      background-color: black;
+    }
+  }
+@keyframes mouse-circle-scale {
+	to {
+		opacity: 0;
+		transform: scale(1.8);
+	}
+}
