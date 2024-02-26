@@ -7,9 +7,9 @@ import Typewriter from 'typewriter-effect';
 function About() {
 
   return (
-    <div className='overflow-hidden' id="about" style={{ width: "100%", backgroundColor: '#252734', paddingTop: '12vh', minHeight: '100vh'}}>
-        <div className='md:flex h-full items-center justify-between'>
-            <div className='text-center md:text-left p-[1rem] w-full md:p-[2rem] lg:p-[8rem] pt-0 md:w-1/2 self-center'>
+    <div className='overflow-hidden' id="about" style={{ width: "100%", backgroundColor: '#252734', paddingTop: '10vh', height: '100vh'}}>
+        <div className='md:flex items-center justify-between'>
+            <div className='text-center md:text-left p-[1rem] w-full md:p-[2rem] lg:p-[4rem] xlg:p-[8rem] lg:pr-0 xlg:pr-4 pt-0 md:w-1/2 self-center'>
                 <div 
                 className='
                 text-[24px] 
@@ -64,7 +64,7 @@ function About() {
                 />
                  </div>
             </div>
-            <div className='w-full flex justify-end md:w-1/2 mt-8'>
+            <div className='w-full flex justify-end md:w-1/2 pt-[5rem]'>
                 <div className='absolute bottom-0 sm:relative md:rounded-full overflow-hidden'>
                     <img src='/images/profile.png' className='block w-full' alt='Profile Image' />
                 </div>

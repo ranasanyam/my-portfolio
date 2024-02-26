@@ -2,7 +2,7 @@ import React from 'react'
 
 function Projects() {
   return (
-    <div>Projects</div>
+    <div style={{ backgroundColor: '#2A2C39', height: '100vh'}} id="projects">Projects</div>
   )
 }
 

@@ -11,6 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #20212d;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #4BFFA5;
+  border-radius: 4px;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
