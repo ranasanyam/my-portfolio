@@ -2,7 +2,7 @@ import React from 'react'
 
 function Experience() {
   return (
-    <div>Experience</div>
+    <div style={{ backgroundColor: '#252734', height: '100vh'}} id="experience">Experience</div>
   )
 }
 
